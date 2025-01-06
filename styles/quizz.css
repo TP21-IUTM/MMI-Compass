@@ -1,0 +1,89 @@
+/* Style du bouton restart */
+.restart-test {
+    padding: 8px 32px;
+    font-family: "Orbitron";
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    border-radius: 100rem;
+    color: #FFF;
+    background: #F5A623;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.restart-test h2 {
+    font-family: "Orbitron";
+    font-weight: 400;
+    font-size: 16px;
+}
+
+        /* Animation de l'effet hover sur le bouton */
+.restart-test::after {
+    content: "";
+    background: rgb(201, 134, 34);
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.4s ease-in-out;
+}
+
+.restart-test:hover::after {
+    width: 100%;
+}
+
+/* Style du main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 128px 256px;
+}
+
+.question-number {
+    font-size: 22px;
+}
+
+/* Style des boutons oui et non */
+.yes-or-no {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+}
+
+.button-yes-or-no {
+    padding: 8px 64px;
+    font-family: "Orbitron";
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    border-radius: 100rem;
+    color: #FFF;
+    background: #F5A623;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.button-yes-or-no::after {
+    content: "";
+    background: rgb(201, 134, 34);
+    height: 0%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.4s ease-in-out;
+}
+
+.button-yes-or-no:hover::after {
+    height: 100%;
+}
