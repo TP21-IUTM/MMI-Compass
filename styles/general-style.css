@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    font-family: "Orbitron";
+    color: #FFF;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(0deg, #2c3e50 45%, #4a90e2);
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 32px;
+}
+
+header h1 {
+    font-weight: 700;
+}
+
+nav {
+    margin-left: auto;
+}

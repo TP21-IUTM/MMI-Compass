@@ -1,0 +1,47 @@
+button {
+    padding: 8px 32px;
+    font-family: "Orbitron";
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    border-radius: 100rem;
+    color: #FFF;
+    background: #F5A623;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+button::after {
+    content: "";
+    background: rgb(201, 134, 34);
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.4s;
+}
+
+button:hover::after {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 128px 256px;
+    gap: 32px;
+}
+
+footer {
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    bottom: 0;
+    background-image: url(../img/wave.svg);
+    background-repeat: no-repeat;
+}
