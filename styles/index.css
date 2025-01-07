@@ -5,7 +5,7 @@ button {
     color: #FFF;
     background: #F5A623;
     position: relative;
-    z-index: 15;
+    z-index: 0;
     cursor: pointer;
     overflow: hidden;
     font-family: "Orbitron";
