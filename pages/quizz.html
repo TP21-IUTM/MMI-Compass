@@ -17,7 +17,7 @@
     <header>
         <h1>MMI Compass</h1>
         <nav>
-            <button class="restart-test"><a href="pages/quizz.html"><h2>Recommencer le quizz</h2></a></button>
+            <button class="restart-test"><a href="../pages/quizz.html"><h2>Recommencer le quizz</h2></a></button>
         </nav>
     </header>
 
@@ -26,13 +26,17 @@
         <h3 class="question-number">Question N°</h3>
         <p class="question-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero dicta nemo qui quam odit harum, odio labore doloremque distinctio totam? Doloribus neque perferendis exercitationem! Corporis culpa qui dicta recusandae similique!</p>
         <div class="yes-or-no">
-            <button class="button-yes-or-no">Oui</button>
-            <button class="button-yes-or-no">Non</button>
+            <button class="button-yes-or-no" onclick="yesPressed()">Oui</button>
+            <button class="button-yes-or-no" onclick="noPressed()">Non</button>
         </div>
     </main>
 
     <!-- IMAGE EN GUISE DE FOOTER -->
     <footer></footer>
+
+    <!-- CHARGEMENT DES SCRIPT JAVASCRIPT -->
+     <script src="../js/data-quizz.js"></script>
+     <script src="../js/question-system.js"></script>
 </body>
 
 </html>
