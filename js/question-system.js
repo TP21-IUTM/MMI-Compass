@@ -73,6 +73,21 @@ function showResults() {
         return
     }
 
+    if (crea_num==dev_web && crea_num>com) {
+        question_zone.innerText = 'On dirait que tu es fait pour la création numérique et pour le dévelopement web ! Voilà tes scores : création numérique = ' + crea_num +' | développement web = ' + dev_web + ' | communication = ' + com
+        return
+    }
+
+    if (crea_num>dev_web && crea_num==com) {
+        question_zone.innerText = 'On dirait que tu es fait pour la création numérique et la communication ! Voilà tes scores : création numérique = ' + crea_num +' | développement web = ' + dev_web + ' | communication = ' + com
+        return
+    }
+
+    if (com==dev_web && com>crea_num) {
+        question_zone.innerText = 'On dirait que tu es fait pour le développement web et la communication ! Voilà tes scores : création numérique = ' + crea_num +' | développement web = ' + dev_web + ' | communication = ' + com
+        return
+    }
+
     if (crea_num == dev_web && crea_num == com && dev_web == com) {
         question_zone.innerText = 'Tu as de la chance ! Tout les parcours te corresponde car tu as obtenu le même nombre de points dans tout les parcours !'
         return

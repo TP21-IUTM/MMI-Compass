@@ -87,3 +87,32 @@ main {
 .button-yes-or-no:hover::after {
     height: 100%;
 }
+
+@media (width<830px) {
+    main {
+        padding: 128px 128px;
+    }
+}
+@media (width<600px) {
+    header {
+        flex-direction: column;
+        gap: 32px;
+    }
+    nav {
+        margin-right: auto;
+    }
+    main {
+        padding: 64px 128px;
+    }
+}
+@media (width<460px) {
+    main {
+        padding: 64px 64px;
+    }
+}
+@media (width<420px) {
+    .yes-or-no {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
